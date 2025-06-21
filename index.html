@@ -15,9 +15,9 @@
 <body>
 
   <!-- Theme Toggle -->
-  <button class="theme-toggle" onclick="toggleTheme()">
-    <i class="fas fa-adjust"></i>
-  </button>
+  <button id="theme-toggle" class="theme-toggle">
+  <i class="fas fa-moon"></i>
+</button>
 
   <!-- SVG Background -->
   <svg class="background-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -119,10 +119,16 @@
 
   <!-- Theme Toggle Script -->
   <script>
-    function toggleTheme() {
-      document.body.classList.toggle('light-theme');
-    }
-  </script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const icon = toggleBtn.querySelector('i');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+    const isLight = document.body.classList.contains('light-theme');
+    icon.classList = isLight ? 'fas fa-sun' : 'fas fa-moon';
+  });
+</script>
+
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
