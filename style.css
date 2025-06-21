@@ -90,23 +90,22 @@
     text-align: center;
   }
   
-  .skills-swiper {
-  width: 90%;
+.skills-swiper {
+  width: 95%;
   max-width: 1000px;
   margin: 2rem auto;
 }
 
 .skills-swiper .swiper-slide {
   text-align: center;
-  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .skills-swiper img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   margin-bottom: 0.5rem;
   transition: transform 0.3s ease;
@@ -116,18 +115,18 @@
   transform: scale(1.1);
 }
 
-/* Responsive settings */
+/* Responsive sizes */
 @media (max-width: 768px) {
   .skills-swiper img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 }
 
 @media (max-width: 480px) {
   .skills-swiper img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 }
 
