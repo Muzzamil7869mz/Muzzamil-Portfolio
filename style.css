@@ -316,6 +316,13 @@
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1.5rem;
+    margin-left: 1rem;  /* tighter spacing on small screens */
+  }
+}
+
 .section-heading::after {
   content: "";
   display: block;
