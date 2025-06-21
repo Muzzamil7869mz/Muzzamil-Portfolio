@@ -59,24 +59,37 @@
   padding: 2.5rem 1rem;
 }
   
-  .typewriter {
+  .typewriter { 
   width: 100%;
   overflow: hidden;
-  white-space: normal;
-  overflow-wrap: break-word;
+  white-space: nowrap;
   border-right: 2px solid var(--primary-color);
   animation: typing 3s steps(30, end), blink 0.8s step-end infinite;
   font-size: 1.1rem;
-  max-width: 90px;
+  max-width: 90%;           /* ✅ More flexible for small screens */
   margin: 1rem auto 0;
   text-align: center;
-  color: var(--light-text);
+  box-sizing: border-box;   /* ✅ Prevent overflow due to border */
 }
 
+/* Mobile font adjustment */
+@media (max-width: 480px) {
+  .typewriter {
+    font-size: 0.9rem;
+  }
+}
+
+/* Typewriter animation */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
+
+/* Blinking cursor animation */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
   
   .profile-pic {
     width: 200px;
