@@ -90,6 +90,27 @@
     text-align: center;
   }
   
+  .mySwiper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mySwiper img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
   .skills-grid {
     display: flex;
     flex-wrap: wrap;
