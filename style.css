@@ -62,12 +62,11 @@
   .typewriter { 
   width: 100%;
   overflow: hidden;
-  white-space: normal;
-  word-wrap: break-word;
+  white-space: nowrap;
   border-right: 2px solid var(--primary-color);
   animation: typing 3s steps(30, end), blink 0.8s step-end infinite;
   font-size: 1.1rem;
-  max-width: 70%;           /* ✅ More flexible for small screens */
+  max-width: 90%;           /* ✅ More flexible for small screens */
   margin: 1rem auto 0;
   text-align: center;
   box-sizing: border-box;   /* ✅ Prevent overflow due to border */
