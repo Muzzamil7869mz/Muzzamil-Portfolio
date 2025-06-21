@@ -1,0 +1,319 @@
+/* style.css */
+
+.hero-name {
+  font-size: 3rem; /* You can increase this to 5rem or more if you want */
+  font-weight: bold;
+  background: linear-gradient(90deg, #00adb5, #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px #000000;
+  animation: gradient-move 3s infinite linear;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 2rem;
+  }
+}
+
+:root {
+    --primary-color: #00adb5;
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --glass-color: rgba(255, 255, 255, 0.05);
+    --light-bg: #f0f0f0;
+    --light-text: #222;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.light-theme {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+  
+  .typewriter {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--primary-color);
+  animation: typing 3s steps(30, end), blink 0.8s step-end infinite;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 1rem auto 0;
+  text-align: center;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    display: block;
+    margin: 0 auto 1.5rem auto;
+  }  
+  
+  .about-text {
+    text-align: center;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .skills-grid span {
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .skills-grid-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.skill-item {
+  width: 100px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--glass-color);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #008b95;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  input, textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+  
+  body.light-theme input,
+  body.light-theme textarea {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .social-icons a {
+    color: var(--primary-color);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #999;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--glass-color);
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 50%;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1000;
+  }
+  
+  .background-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .glass {
+    background: var(--glass-color);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  
+  /* Light Theme overrides */
+  body.light-theme .glass {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+  }
+  
+  body.light-theme footer {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .about-wrapper {
+    text-align: center;
+    position: relative;
+  }
+  
+  .profile-wrapper {
+    position: relative;
+    width: 220px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .blob-bg {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle at 30% 30%, var(--primary-color), transparent);
+    border-radius: 50%;
+    filter: blur(30px);
+    z-index: 0;
+  }
+  
+  .profile-pic.stylish {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 10px 25px rgba(0, 173, 181, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    z-index: 1;
+  }
+  
+  .profile-pic.stylish:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 173, 181, 0.6);
+  }
+.section-heading {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 8px auto 0 auto;
+  border-radius: 10px;
+}
+
+header.glass {
+  box-shadow: 0 0 20px rgba(0, 173, 181, 0.3);
+  border: 1px solid rgba(0, 173, 181, 0.2);
+  padding: 2rem 1rem;
+  border-radius: 20px;
+}
