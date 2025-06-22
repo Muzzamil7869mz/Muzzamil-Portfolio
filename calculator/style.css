@@ -15,8 +15,17 @@ body {
   background-color: #222;
   padding: 20px;
   border-radius: 10px;
+  border: 3px solid #ff9500;
   box-shadow: 0 0 10px #000;
   width: 300px;
+  position: relative;
+}
+
+.title {
+  color: #ff9500;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 10px;
 }
 
 #display {

@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muzzamil's Calculator</title>
+  <title>Muzzamil Calculator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="calculator">
+  <fieldset class="calculator">
+    <legend class="title">Muzzamil Calculator</legend>
     <input type="text" id="display" disabled />
     <div class="buttons">
       <button class="btn" onclick="clearDisplay()">C</button>
@@ -33,7 +34,7 @@
       <button class="btn zero" onclick="appendValue('0')">0</button>
       <button class="btn" onclick="appendValue('.')">.</button>
     </div>
-  </div>
+  </fieldset>
   <script src="script.js"></script>
 </body>
 </html>
