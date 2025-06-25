@@ -21,7 +21,6 @@ function calculate() {
   }
 }
 
-// ✅ Keyboard support
 document.addEventListener('keydown', function (event) {
   const key = event.key;
 

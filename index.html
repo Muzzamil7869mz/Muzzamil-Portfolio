@@ -14,17 +14,14 @@
 </head>
 <body>
 
-  <!-- Theme Toggle -->
   <button id="theme-toggle" class="theme-toggle">
   <i class="fas fa-moon"></i>
 </button>
 
-  <!-- SVG Background -->
   <svg class="background-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#00adb5" fill-opacity="0.3" d="M0,64L60,74.7C120,85,240,107,360,133.3C480,160,600,192,720,192C840,192,960,160,1080,160C1200,160,1320,192,1380,208L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
   </svg>
 
-  <!-- Header -->
   <header class="glass" data-aos="fade-down" data-aos-duration="1200">
     <div class="container">
       <h1 class="hero-name">Muzzamil Fodkar</h1>
@@ -61,8 +58,6 @@
   </div>
 </section>
 
-
-  <!-- Projects Section -->
   <section id="projects" data-aos="fade-up">
     <div class="container">
       <h2>Projects</h2>
@@ -82,7 +77,6 @@
     </div>
   </section>
 
-  <!-- Resume -->
   <section id="resume" class="glass" data-aos="fade-up">
     <div class="container">
       <h2>Resume</h2>
@@ -90,7 +84,6 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" data-aos="fade-up">
     <div class="container">
       <h2>Contact</h2>
@@ -110,16 +103,13 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Muzzamil Fodkar. Built with ❤️</p>
   </footer>
 
-  <!-- AOS Library -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 
-  <!-- Theme Toggle Script -->
   <script>
   const toggleBtn = document.getElementById('theme-toggle');
   const icon = toggleBtn.querySelector('i');
@@ -131,11 +121,8 @@
   });
 </script>
 
-
-<!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- Swiper Init -->
 <script>
   const swiper = new Swiper('.skills-swiper', {
     slidesPerView: 4,
@@ -147,7 +134,6 @@
     },
     speed: 600,
 
-    // Responsive breakpoints
     breakpoints: {
       320: {
         slidesPerView: 2,
