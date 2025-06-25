@@ -1,5 +1,7 @@
+/* style.css */
+
 .hero-name {
-  font-size: 3rem; 
+  font-size: 3rem; /* You can increase this to 5rem or more if you want */
   font-weight: bold;
   background: linear-gradient(90deg, #00adb5, #fff);
   background-clip: text;
@@ -64,22 +66,26 @@
   border-right: 2px solid var(--primary-color);
   animation: typing 3s steps(30, end), blink 0.8s step-end infinite;
   font-size: 1.1rem;
-  max-width: 90%;          
+  max-width: 90%;           /* ✅ More flexible for small screens */
   margin: 1rem auto 0;
   text-align: center;
-  box-sizing: border-box;  
+  box-sizing: border-box;   /* ✅ Prevent overflow due to border */
+}
 
+/* Mobile font adjustment */
 @media (max-width: 480px) {
   .typewriter {
     font-size: 0.9rem;
   }
 }
 
+/* Typewriter animation */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
+/* Blinking cursor animation */
 @keyframes blink {
   50% { border-color: transparent; }
 }
@@ -124,6 +130,7 @@
   transform: scale(1.1);
 }
 
+/* Responsive sizes */
 @media (max-width: 768px) {
   .skills-swiper img {
     width: 80px;
@@ -248,6 +255,7 @@
     margin: 2rem 0;
   }
   
+zz
   body.light-theme .glass {
     background-color: rgba(255, 255, 255, 0.6);
     color: #000;
